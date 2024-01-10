@@ -1,36 +1,266 @@
-/* === START CSS RESET === https://andy-bell.co.uk/a-more-modern-css-reset/ */
-
-/* Box sizing rules */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* Prevent font size inflation */
 html {
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
 }
 
-/* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, p {
+body, h1, p {
     margin: 0;
 }
 
-/* Make images easier to work with */
 img {
     max-width: 100%;
     display: block;
 }
 
-/* === END CSS RESET === */
+@font-face {
+    font-family: "Libre Franklin";
+    src: url("../fonts/LibreFranklin-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Libre Franklin";
+    src: url("../fonts/LibreFranklin-Italic.ttf");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Libre Franklin";
+    src: url("../fonts/LibreFranklin-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Libre Franklin";
+    src: url("../fonts/LibreFranklin-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+:root {
+    font-family: "Libre Franklin", sans-serif;
+
+    --clr-white-800: #FFFFFF;
+    --clr-gray-400: #969696;
+    --clr-blue-100: #15202A;
+    --clr-blue-400: #4C7BF3;
+    --clr-blue-500: #7196f5;
+    --clr-blue-600: #B8C7ED;
+    --clr-blue-800: #C2D3FF;
+    --clr-red-400: #FF5466;
+}
 
 /* COMPOSITION */
+body {
+    min-height: 100vh;
+}
+
+main {
+    width: var(--main-width, 712px);
+    height: var(--main-height, 1024px);
+    padding: var(--main-padding, 80px 0 49px);
+}
+
+.inner-container {
+    margin-top: 40px;
+}
+
+.hero-text {
+    gap: var(--hero-text-gap, 16px);
+}
+
+.sign-up {
+    margin: var(--sign-up-margin, 40px 37px 0 38px);
+    gap: var(--sign-up-gap, 16px);
+}
 
 /* UTILITIES */
+.flow > * + * {
+    margin-top: var(--flow-space, 1rem);
+}
+
+.flex-center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clr-primary {
+    color: var(--clr-gray-400);
+}
+
+.clr-secondary {
+    color: var(--clr-blue-100);
+}
+
+.fnt-light {
+    font-weight: 300;
+}
+
+.fnt-regular {
+    font-weight: 400;
+}
+
+.fnt-semi-bold {
+    font-weight: 600;
+}
+
+.fnt-bold {
+    font-weight: 700;
+}
 
 /* BLOCK */
+header img {
+    width: var(--header-logo-width, 90px);
+    height: var(--header-logo-height, 39px);
+}
+
+.hero-text h1 {
+    font-size: var(--hero-text-h1-font-size, 48px);
+    line-height: var(--hero-text-h1-line-height, 60px);
+}
+
+.hero-text p {
+    font-size: var(--hero-text-p-font-size, 20px);
+}
+
+.sign-up input {
+    display: block;
+    width: var(--sign-up-input-width, 421px);
+    height: var(--sign-up-input-height, 56px);
+    flex-shrink: 0;
+    border-radius: 28px;
+    border: 1px solid var(--clr-blue-800);
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.00);
+    font-size: var(--sign-up-input-font-size, 16px);
+    line-height: 20px;
+    padding: var(--sign-up-input-padding, 18px 0 18px 30px);
+}
+
+.sign-up input::placeholder {
+    color: var(--clr-blue-600);
+}
+
+.sign-up .input-wrapper {
+    --flow-space: 6px;
+}
+
+.sign-up button {
+    width: var(--sign-up-button-width, 200px);
+    height: var(--sign-up-button-height, 56px);
+    flex-shrink: 0;
+    border: none;
+    border-radius: 28px;
+    background-color: var(--clr-blue-400);
+    box-shadow: 0 5px 10px 2px rgba(76, 123, 243, 0.23);
+    color: var(--clr-white-800);
+    font-size: var(--sign-up-button-font-size, 16px);
+    line-height: var(--sign-up-button-line-height, normal);
+}
 
 /* EXCEPTIONS */
+.sign-up input:focus {
+    outline: none;
+    border-color: var(--clr-blue-100);
+}
+
+.sign-up input:hover {
+    border-color: var(--clr-blue-500);
+}
+
+.sign-up button:hover {
+    cursor: pointer;
+    background-color: var(--clr-blue-500);
+}
+
+.sign-up-error-message {
+    /* Rendered via JS as .sign-up input::after */
+    color: var(--clr-red-400);
+    font-weight: 400;
+    font-style: italic;
+    font-size: var(--sign-up-error-text-font-size, 12px);
+    line-height: 20px;
+}
+
+/* DESKTOP VERSION */
+@media only screen and (width >= 768px) {
+    .sign-up {
+        align-items: start;
+    }
+
+    .sign-up .input-wrapper p {
+        margin-left: 30px;
+    }
+}
+
+/* MOBILE VERSION */
+@media only screen and (width < 768px) {
+    :root {
+        /* main */
+        --main-width: 375px;
+        --main-height: 812px;
+        --main-padding: 81px 27px 37px;
+
+        /* header */
+        --header-logo-width: 56px;
+        --header-logo-height: 24px;
+
+        /* hero-text */
+        --hero-text-gap: 15px;
+        --hero-text-h1-font-size: 22px;
+        --hero-text-h1-line-height: 32px;
+        --hero-text-p-font-size: 12px;
+
+        /* sign-up */
+        --sign-up-margin: 32px 10px 0 10px;
+        --sign-up-gap: 10px;
+
+        /* sign-up input */
+        --sign-up-input-width: 100%;
+        --sign-up-input-height: 40px;
+        --sign-up-input-font-size: 12px;
+        --sign-up-input-padding: 10px 0 10px 32px;
+
+        /* sign-up error */
+        --sign-up-error-text-font-size: 10px;
+
+        /* sign-up button*/
+        --sign-up-button-width: 100%;
+        --sign-up-button-height: 40px;
+        --sign-up-button-font-size: 12px;
+        --sign-up-button-line-height: 16px;
+    }
+
+    .inner-container {
+        width: 100%;
+        padding: 32px 10px 0;
+    }
+
+    .sign-up {
+        flex-direction: column;
+    }
+
+    .sign-up .input-wrapper {
+        --flow-space: 2px;
+    }
+
+    .sign-up .input-wrapper p {
+        text-align: center;
+    }
+}

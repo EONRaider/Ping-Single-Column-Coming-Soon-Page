@@ -1,10 +1,10 @@
-# Frontend Mentor - Project solution
+# Frontend Mentor - Ping Single Column Coming Soon Page solution
 
-[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/EONRaider/project?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/eonraider/project)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/EONRaider/ping-single-column-coming-soon-page?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/eonraider/ping-single-column-coming-soon-page)
 [![FrontendMentor](https://img.shields.io/badge/FrontendMentor-EONRaider-blue?style=flat-square)](https://www.frontendmentor.io/profile/EONRaider)
 
-This is a solution to [Project](). Frontend Mentor challenges help you
-improve your coding skills by building realistic projects.
+This is a solution to [Ping Single Column Coming Soon Page](). Frontend Mentor challenges help you
+improve your coding skills by building realistic ping-single-column-coming-soon-pages.
 
 ## Table of contents
 
@@ -22,7 +22,7 @@ improve your coding skills by building realistic projects.
 
 ### Links
 
-- [Check the Live Site](https://eonraider-project.netlify.app/)
+- [Check the Live Site](https://eonraider-ping-page.netlify.app/)
 - [My Solution on Frontend Mentor]()
 
 ### Screenshot
@@ -42,13 +42,13 @@ npm install && npm start
 The app will be available at http://127.0.0.1:3000/
 
 ```shell
-docker run -d -p 3000:3000 eonraider/project
+docker run -d -p 3000:3000 eonraider/ping-single-column-coming-soon-page
 ```
 
 ## My process
 
 1. I started with the markup on index.html, complying with HTML5 semantic tags and standards as much as possible.
-2. The styling provided by the project briefing was implemented first, followed by the classes I came up with on the
+2. The styling provided by the ping-single-column-coming-soon-page briefing was implemented first, followed by the classes I came up with on the
    markup.
 3. I used Figma to acquire all the right dimensions involved in the layout and implemented them in the appropriate CSS
    classes.
