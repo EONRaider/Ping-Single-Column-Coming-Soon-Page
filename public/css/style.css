@@ -71,6 +71,10 @@ main {
     padding: var(--main-padding, 80px 0 49px);
 }
 
+main > * {
+    width: 100%;
+}
+
 .hero-text {
     margin-top: var(--hero-text-margin-top, 40px);
     gap: var(--hero-text-gap, 16px);
@@ -85,6 +89,12 @@ main {
 /* UTILITIES */
 .flow > * + * {
     margin-top: var(--flow-space, 1rem);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex-center-column {
