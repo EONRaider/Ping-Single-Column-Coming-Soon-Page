@@ -138,6 +138,10 @@ main img {
     font-weight: 700;
 }
 
+.transition > * {
+    transition: all 0.2s ease-in-out;
+}
+
 /* BLOCK */
 header img {
     width: var(--header-logo-width, 90px);
@@ -259,6 +263,9 @@ header img {
         --sign-up-button-height: 40px;
         --sign-up-button-font-size: 12px;
         --sign-up-button-line-height: 16px;
+
+        /* main img */
+        --main-img-margin-top: 72px;
     }
 
     .inner-container {
