@@ -1,8 +1,8 @@
 # Frontend Mentor - Ping Single Column Coming Soon Page solution
 
 [![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/Havoc-Solutions/ping-single-column-coming-soon-page?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/Havoc-Solutions/ping-single-column-coming-soon-page)
-[![FrontendMentor](https://img.shields.io/badge/FrontendMentor-EONRaider-blue?style=flat-square)](https://www.frontendmentor.io/profile/EONRaider)
 ![W3C Validation](https://img.shields.io/w3c-validation/html?style=flat-square&targetUrl=https%3A%2F%2Feonraider-ping-page.netlify.app%2F)
+[![FrontendMentor](https://img.shields.io/badge/FrontendMentor-EONRaider-blue?style=flat-square)](https://www.frontendmentor.io/profile/EONRaider)
 
 This is a solution
 to [Ping Single Column Coming Soon Page](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da).
@@ -25,9 +25,11 @@ improve your coding skills by building realistic ping-single-column-coming-soon-
 ### Links
 
 - [Check the Live Site](https://eonraider-ping-page.netlify.app/)
-- [My Solution on Frontend Mentor]()
+- [My Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-html5css3js-ping-single-column-coming-soon-page-HpnP--N6Xt)
 
 ### Screenshot
+
+![Ping-Single-Column-Coming-Soon-Page](https://github.com/Havoc-Solutions/Ping-Single-Column-Coming-Soon-Page/assets/15611424/31cdc731-46fd-4c71-a79f-d96dd8a923d8)
 
 ## Try it out!
 
