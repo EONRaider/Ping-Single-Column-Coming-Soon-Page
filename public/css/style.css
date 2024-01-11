@@ -97,10 +97,6 @@ footer {
 }
 
 /* UTILITIES */
-.flow > * + * {
-    margin-top: var(--flow-space, 1rem);
-}
-
 .flex-start {
     display: flex;
     align-items: center;
@@ -184,10 +180,6 @@ header img {
     color: var(--clr-blue-600);
 }
 
-.sign-up .input-wrapper {
-    --flow-space: 6px;
-}
-
 .sign-up button {
     width: var(--sign-up-button-width, 200px);
     height: var(--sign-up-button-height, 56px);
@@ -248,10 +240,6 @@ footer .social-icon:hover {
         align-items: start;
     }
 
-    .sign-up .input-wrapper p {
-        margin-left: 30px;
-    }
-
     main .hero-img {
         padding: 0 36px;
     }
@@ -310,10 +298,7 @@ footer .social-icon:hover {
 
     .sign-up {
         flex-direction: column;
-    }
-
-    .sign-up .input-wrapper {
-        --flow-space: 2px;
+        align-items: stretch;
     }
 
     .sign-up .input-wrapper p {
