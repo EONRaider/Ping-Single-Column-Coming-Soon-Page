@@ -221,8 +221,9 @@ footer p {
     background-color: var(--clr-blue-500);
 }
 
-.sign-up-error-message {
-    /* Rendered via JS as .sign-up input::after */
+.error::after {
+    content: 'Please provide a valid email address';
+    display: block;
     color: var(--clr-red-400);
     font-weight: 400;
     font-style: italic;
@@ -242,6 +243,10 @@ footer .social-icon:hover {
 
     main .hero-img {
         padding: 0 36px;
+    }
+
+    .sign-up .error-message::after {
+        margin: 6px 0 0 30px;
     }
 }
 
@@ -301,7 +306,8 @@ footer .social-icon:hover {
         align-items: stretch;
     }
 
-    .sign-up .input-wrapper p {
+    .sign-up .error-message::after {
+        margin: 2px 0 10px;
         text-align: center;
     }
 }
