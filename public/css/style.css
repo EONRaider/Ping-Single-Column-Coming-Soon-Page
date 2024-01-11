@@ -211,7 +211,6 @@ footer .social-icon {
 }
 
 footer p {
-    color: var(--clr-gray-400);
     font-size: var(--footer-p-font-size, 12px);
 }
 
