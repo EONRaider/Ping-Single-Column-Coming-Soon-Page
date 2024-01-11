@@ -1,9 +1,12 @@
 # Frontend Mentor - Ping Single Column Coming Soon Page solution
 
-[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/EONRaider/ping-single-column-coming-soon-page?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/eonraider/ping-single-column-coming-soon-page)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/Havoc-Solutions/ping-single-column-coming-soon-page?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/Havoc-Solutions/ping-single-column-coming-soon-page)
 [![FrontendMentor](https://img.shields.io/badge/FrontendMentor-EONRaider-blue?style=flat-square)](https://www.frontendmentor.io/profile/EONRaider)
+![W3C Validation](https://img.shields.io/w3c-validation/html?style=flat-square&targetUrl=https%3A%2F%2Feonraider-ping-page.netlify.app%2F)
 
-This is a solution to [Ping Single Column Coming Soon Page](). Frontend Mentor challenges help you
+This is a solution
+to [Ping Single Column Coming Soon Page](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da).
+Frontend Mentor challenges help you
 improve your coding skills by building realistic ping-single-column-coming-soon-pages.
 
 ## Table of contents
@@ -16,7 +19,6 @@ improve your coding skills by building realistic ping-single-column-coming-soon-
     - [Run with Docker](#run-with-docker)
 - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
 
 ## Overview
 
@@ -48,7 +50,8 @@ docker run -d -p 3000:3000 eonraider/ping-single-column-coming-soon-page
 ## My process
 
 1. I started with the markup on index.html, complying with HTML5 semantic tags and standards as much as possible.
-2. The styling provided by the ping-single-column-coming-soon-page briefing was implemented first, followed by the classes I came up with on the
+2. The styling provided by the ping-single-column-coming-soon-page briefing was implemented first, followed by the
+   classes I came up with on the
    markup.
 3. I used Figma to acquire all the right dimensions involved in the layout and implemented them in the appropriate CSS
    classes.
@@ -58,5 +61,3 @@ docker run -d -p 3000:3000 eonraider/ping-single-column-coming-soon-page
 
 - Semantic HTML5 markup
 - Cube CSS methodology
-
-### What I learned
