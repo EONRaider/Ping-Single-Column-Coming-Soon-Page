@@ -1,7 +1,7 @@
 {
-  "name": "project",
+  "name": "ping-coming-soon-page",
   "version": "1.0.0",
-  "description": "A brief description of project",
+  "description": "A coming soon landing page for Ping",
   "main": "app.js",
   "type": "module",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EONRaider/Project.git"
+    "url": "git+https://github.com/Havoc-Solutions/Ping-Single-Column-Coming-Soon-Page.git"
   },
   "author": "EONRaider",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EONRaider/Project/issues"
+    "url": "https://github.com/Havoc-Solutions/Ping-Single-Column-Coming-Soon-Page/issues"
   },
-  "homepage": "https://github.com/EONRaider/Project#readme",
+  "homepage": "https://github.com/Havoc-Solutions/Ping-Single-Column-Coming-Soon-Page#readme",
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
