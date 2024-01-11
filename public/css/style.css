@@ -67,7 +67,6 @@ body {
 
 main {
     width: var(--main-width, 712px);
-    height: var(--main-height, 1024px);
     padding: var(--main-padding, 80px 0 49px);
 }
 
@@ -86,14 +85,25 @@ main > * {
     gap: var(--sign-up-gap, 16px);
 }
 
-main img {
+main .hero-img {
     max-width: 100%;
-    margin-top: var(--main-img-margin-top, 94px);
+    height: var(--hero-img-height, 383px);
+    margin-top: var(--hero-img-margin-top, 94px);
+}
+
+footer {
+    margin-top: var(--footer-margin-top, 72px);
+    gap: var(--footer-gap, 25px);
 }
 
 /* UTILITIES */
 .flow > * + * {
     margin-top: var(--flow-space, 1rem);
+}
+
+.flex-start {
+    display: flex;
+    align-items: center;
 }
 
 .flex-center {
@@ -191,6 +201,20 @@ header img {
     line-height: var(--sign-up-button-line-height, normal);
 }
 
+footer .social-icons {
+    gap: 12px;
+}
+
+footer .social-icon {
+    width: 32px;
+    height: 31px;
+}
+
+footer p {
+    color: var(--clr-gray-400);
+    font-size: var(--footer-p-font-size, 12px);
+}
+
 /* EXCEPTIONS */
 .sign-up input:focus {
     outline: none;
@@ -215,6 +239,10 @@ header img {
     line-height: 20px;
 }
 
+footer .social-icon:hover {
+    cursor: pointer;
+}
+
 /* DESKTOP VERSION */
 @media only screen and (width >= 768px) {
     .sign-up {
@@ -223,6 +251,10 @@ header img {
 
     .sign-up .input-wrapper p {
         margin-left: 30px;
+    }
+
+    main .hero-img {
+        padding: 0 36px;
     }
 }
 
@@ -264,8 +296,14 @@ header img {
         --sign-up-button-font-size: 12px;
         --sign-up-button-line-height: 16px;
 
-        /* main img */
-        --main-img-margin-top: 72px;
+        /* hero img */
+        --hero-img-margin-top: 72px;
+        --hero-img-height: 192px;
+
+        /* footer */
+        --footer-margin-top: 120px;
+        --footer-gap: 27px;
+        --footer-p-font-size: 10px;
     }
 
     .inner-container {
